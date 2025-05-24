@@ -1,0 +1,529 @@
+[
+    {
+        "id": 1,
+        "merek": "Mitsubishi",
+        "tahun_beli": 2016,
+        "tipe": "MPV",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 116891,
+        "warna": "Abu-abu",
+        "harga": 245325199,
+        "daerah": "Balikpapan",
+        "fitur_tambahan": [
+            "Power Steering",
+            "Airbag",
+            "Sensor Parkir",
+            "Sunroof"
+        ],
+        "gambar": "https://i.pinimg.com/736x/25/e3/86/25e386e75a1b1857009a2d61a2d36948.jpg"
+    },
+    {
+        "id": 2,
+        "merek": "Honda",
+        "tahun_beli": 2020,
+        "tipe": "SUV",
+        "transmisi": "Manual",
+        "jarak_tempuh": 105499,
+        "warna": "Biru",
+        "harga": 315621997,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "ABS",
+            "Airbag",
+            "Kamera Belakang",
+            "Bluetooth",
+            "AC"
+        ],
+        "gambar": "public/img/mobil biru lagi lagi.png"
+    },
+    {
+        "id": 3,
+        "merek": "Toyota",
+        "tahun_beli": 2010,
+        "tipe": "Crossover",
+        "transmisi": "Manual",
+        "jarak_tempuh": 53983,
+        "warna": "Kuning",
+        "harga": 169058072,
+        "daerah": "Medan",
+        "fitur_tambahan": [
+            "Sunroof",
+            "Airbag",
+            "ABS",
+            "Sensor Parkir",
+            "Bluetooth"
+        ],
+        "gambar": "https://lh7-us.googleusercontent.com/docsz/AD_4nXcfjstqVyag4xvMr_rUFaUwIEwp1yUVhilREGUYhaMqtgQ2p4M1G1KoEaIjsoYdjdcAUUxWPmv4QS46IMMP6FVHLlS-weKzfjx71AldjSNXISYn-4ldw0cRSgipWfiKQrVsMKHX5ofibtrBV0O3B4VSo68b?key=BXKS2UHNgOayQWm9_3LeHA"
+    },
+    {
+        "id": 4,
+        "merek": "Mazda",
+        "tahun_beli": 2016,
+        "tipe": "MPV",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 137055,
+        "warna": "Kuning",
+        "harga": 233982213,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "AC",
+            "Kamera Belakang",
+            "ABS"
+        ],
+        "gambar": "public/img/mobil kuning.png"
+    },
+    {
+        "id": 5,
+        "merek": "Mitsubishi",
+        "tahun_beli": 2022,
+        "tipe": "Sedan",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 95272,
+        "warna": "Biru",
+        "harga": 219499931,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "AC",
+            "Sensor Parkir",
+            "Sunroof",
+            "ABS"
+        ],
+        "gambar": "public/img/mobil biru.png"
+    },
+    {
+        "id": 6,
+        "merek": "Toyota",
+        "tahun_beli": 2020,
+        "tipe": "Crossover",
+        "transmisi": "Manual",
+        "jarak_tempuh": 111040,
+        "warna": "Biru",
+        "harga": 339064414,
+        "daerah": "Yogyakarta",
+        "fitur_tambahan": [
+            "Sensor Parkir",
+            "Sunroof"
+        ],
+        "gambar": "https://imgcdn.oto.com/medium/gallery/color/38/2304/toyota-corolla-cross-color-488794.jpg"
+    },
+    {
+        "id": 7,
+        "merek": "Wuling",
+        "tahun_beli": 2013,
+        "tipe": "Coupe",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 67259,
+        "warna": "Hitam",
+        "harga": 131880808,
+        "daerah": "Denpasar",
+        "fitur_tambahan": [
+            "Bluetooth",
+            "Sensor Parkir",
+            "Power Steering"
+        ],
+        "gambar": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/98/MTA-54483208/wuling_wuling_new_cortez_ex_hitam_full01_iydo181l.jpg"
+    },
+    {
+        "id": 8,
+        "merek": "Hyundai",
+        "tahun_beli": 2015,
+        "tipe": "MPV",
+        "transmisi": "Manual",
+        "jarak_tempuh": 124797,
+        "warna": "Merah",
+        "harga": 234598284,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "Bluetooth",
+            "Sensor Parkir",
+            "Sunroof",
+            "ABS"
+        ],
+        "gambar": "https://www.rydersofwarrington.co.uk/media/images/52595717/51000945DragonRedPearl.png"
+    },
+    {
+        "id": 9,
+        "merek": "Daihatsu",
+        "tahun_beli": 2021,
+        "tipe": "Hatchback",
+        "transmisi": "Manual",
+        "jarak_tempuh": 17970,
+        "warna": "Kuning",
+        "harga": 389105259,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "Bluetooth",
+            "Kamera Belakang",
+            "ABS",
+            "AC"
+        ],
+        "gambar": "https://res.cloudinary.com/mufautoshow/image/upload/f_auto,f_auto/w_1200/v1681350145/moas/news/1681350137_daihatsu-all-new-ayla-upgrade-total-jadi-semakin-sporty.png"
+    },
+    {
+        "id": 10,
+        "merek": "Wuling",
+        "tahun_beli": 2012,
+        "tipe": "Sedan",
+        "transmisi": "Manual",
+        "jarak_tempuh": 86570,
+        "warna": "Hijau",
+        "harga": 251948143,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "Power Steering",
+            "Sunroof",
+            "Kamera Belakang"
+        ],
+        "gambar": "https://imgcdn.oto.com/large/gallery/color/110/2845/wuling-binguo-ev-color-458984.jpg"
+    },
+    {
+        "id": 11,
+        "merek": "Toyota",
+        "tahun_beli": 2014,
+        "tipe": "Convertible",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 27487,
+        "warna": "Putih",
+        "harga": 461575066,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "Kamera Belakang",
+            "Sensor Parkir"
+        ],
+        "gambar": "public/img/mobil putih.png"
+    },
+    {
+        "id": 12,
+        "merek": "Honda",
+        "tahun_beli": 2011,
+        "tipe": "Hatchback",
+        "transmisi": "Manual",
+        "jarak_tempuh": 148627,
+        "warna": "Putih",
+        "harga": 381537618,
+        "daerah": "Medan",
+        "fitur_tambahan": [
+            "Power Steering",
+            "Sensor Parkir",
+            "AC",
+            "Kamera Belakang",
+            "Sunroof"
+        ],
+        "gambar": "https://pusathondajabodetabek.com/assets/img/product/city-car-hatchback/city-hatchback/platinum-white-pearl.png"
+    },
+    {
+        "id": 13,
+        "merek": "Honda",
+        "tahun_beli": 2020,
+        "tipe": "SUV",
+        "transmisi": "Manual",
+        "jarak_tempuh": 126188,
+        "warna": "Abu-abu",
+        "harga": 478899350,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "ABS",
+            "AC",
+            "Bluetooth",
+            "Kamera Belakang",
+            "Sunroof"
+        ],
+        "gambar": "https://hondakotamobagu.com/wp-content/uploads/2022/07/Harga-Mobil-Honda-CR-V-di-Honda-Manado-dan-Kotamobagu-Martadinata-2Sales-Dealer-Mobil-Honda-di-Manado-dan-Kotamobagu-Sulawesi-Utara-indonesia.png"
+    },
+    {
+        "id": 14,
+        "merek": "Suzuki",
+        "tahun_beli": 2020,
+        "tipe": "Pickup",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 89748,
+        "warna": "Hitam",
+        "harga": 195298476,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "Sensor Parkir",
+            "Bluetooth"
+        ],
+        "gambar": "https://www.suzuki-cikampek.com/wp-content/uploads/2018/04/Mega-Carry-Black-1.jpg"
+    },
+    {
+        "id": 15,
+        "merek": "Wuling",
+        "tahun_beli": 2010,
+        "tipe": "Coupe",
+        "transmisi": "Manual",
+        "jarak_tempuh": 65443,
+        "warna": "Hitam",
+        "harga": 325071306,
+        "daerah": "Bandung",
+        "fitur_tambahan": [
+            "Airbag",
+            "ABS"
+        ],
+        "gambar": "https://imgcdn.oto.com/large/gallery/color/110/2798/wuling-almaz-rs-2023-color-730355.jpg"
+    },
+    {
+        "id": 16,
+        "merek": "Honda",
+        "tahun_beli": 2018,
+        "tipe": "Sedan",
+        "transmisi": "Manual",
+        "jarak_tempuh": 77696,
+        "warna": "Kuning",
+        "harga": 472325146,
+        "daerah": "Denpasar",
+        "fitur_tambahan": [
+            "ABS",
+            "Kamera Belakang",
+            "Bluetooth"
+        ],
+        "gambar": "https://down-id.img.susercontent.com/file/id-11134207-7quky-lhvyag5anw2m29"
+    },
+    {
+        "id": 17,
+        "merek": "Daihatsu",
+        "tahun_beli": 2019,
+        "tipe": "Crossover",
+        "transmisi": "Manual",
+        "jarak_tempuh": 21413,
+        "warna": "Biru",
+        "harga": 393987369,
+        "daerah": "Yogyakarta",
+        "fitur_tambahan": [
+            "AC",
+            "Bluetooth",
+            "Airbag",
+            "Kamera Belakang",
+            "Sunroof"
+        ],
+        "gambar": "public/img/mobil biru lagi.png"
+    },
+    {
+        "id": 18,
+        "merek": "Mitsubishi",
+        "tahun_beli": 2010,
+        "tipe": "Pickup",
+        "transmisi": "Manual",
+        "jarak_tempuh": 125049,
+        "warna": "Silver",
+        "harga": 87519451,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "Airbag",
+            "AC",
+            "ABS"
+        ],
+        "gambar": "https://www.carmudi.co.id/journal/wp-content/uploads/2019/01/carry-pu-wd-silver.jpg"
+    },
+    {
+        "id": 19,
+        "merek": "Daihatsu",
+        "tahun_beli": 2014,
+        "tipe": "SUV",
+        "transmisi": "Manual",
+        "jarak_tempuh": 98590,
+        "warna": "Hitam",
+        "harga": 215135503,
+        "daerah": "Surabaya",
+        "fitur_tambahan": [
+            "ABS",
+            "Kamera Belakang",
+            "Power Steering"
+        ],
+        "gambar": "https://imgcdn.oto.com/large/gallery/color/7/1669/daihatsu-terios-color-969804.jpg"
+    },
+    {
+        "id": 20,
+        "merek": "Hyundai",
+        "tahun_beli": 2011,
+        "tipe": "Convertible",
+        "transmisi": "Manual",
+        "jarak_tempuh": 40523,
+        "warna": "Biru",
+        "harga": 119732492,
+        "daerah": "Balikpapan",
+        "fitur_tambahan": [
+            "Kamera Belakang",
+            "Sensor Parkir",
+            "Sunroof",
+            "Power Steering"
+        ],
+        "gambar": "https://hyundai-mobil.id/wp-content/uploads/2021/12/Galaxy-Blue-Pearl.png"
+    },
+    {
+        "id": 21,
+        "merek": "Nissan",
+        "tahun_beli": 2014,
+        "tipe": "Convertible",
+        "transmisi": "Manual",
+        "jarak_tempuh": 113372,
+        "warna": "Kuning",
+        "harga": 114368248,
+        "daerah": "Semarang",
+        "fitur_tambahan": [
+            "Kamera Belakang",
+            "Bluetooth",
+            "ABS",
+            "AC"
+        ],
+        "gambar": "public/img/mobil kuning lagi.png"
+    },
+    {
+        "id": 22,
+        "merek": "Nissan",
+        "tahun_beli": 2016,
+        "tipe": "Pickup",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 49291,
+        "warna": "Hijau",
+        "harga": 234323402,
+        "daerah": "Jakarta",
+        "fitur_tambahan": [
+            "Sensor Parkir",
+            "Kamera Belakang",
+            "AC",
+            "ABS",
+            "Bluetooth"
+        ],
+        "gambar": "https://example.com/images/car_22.jpg"
+    },
+    {
+        "id": 23,
+        "merek": "Nissan",
+        "tahun_beli": 2017,
+        "tipe": "Sedan",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 73581,
+        "warna": "Kuning",
+        "harga": 304425346,
+        "daerah": "Jakarta",
+        "fitur_tambahan": [
+            "Kamera Belakang",
+            "ABS",
+            "AC"
+        ],
+        "gambar": "https://example.com/images/car_23.jpg"
+    },
+    {
+        "id": 24,
+        "merek": "Honda",
+        "tahun_beli": 2011,
+        "tipe": "Sedan",
+        "transmisi": "Manual",
+        "jarak_tempuh": 140502,
+        "warna": "Abu-abu",
+        "harga": 95416137,
+        "daerah": "Yogyakarta",
+        "fitur_tambahan": [
+            "Airbag",
+            "Sunroof"
+        ],
+        "gambar": "https://example.com/images/car_24.jpg"
+    },
+    {
+        "id": 25,
+        "merek": "Wuling",
+        "tahun_beli": 2021,
+        "tipe": "Sedan",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 110078,
+        "warna": "Hitam",
+        "harga": 242593254,
+        "daerah": "Denpasar",
+        "fitur_tambahan": [
+            "Sunroof",
+            "Bluetooth",
+            "Airbag",
+            "ABS"
+        ],
+        "gambar": "https://example.com/images/car_25.jpg"
+    },
+    {
+        "id": 26,
+        "merek": "Honda",
+        "tahun_beli": 2013,
+        "tipe": "Pickup",
+        "transmisi": "Manual",
+        "jarak_tempuh": 42036,
+        "warna": "Abu-abu",
+        "harga": 355866323,
+        "daerah": "Bandung",
+        "fitur_tambahan": [
+            "AC",
+            "Sunroof",
+            "Bluetooth",
+            "Airbag"
+        ],
+        "gambar": "https://example.com/images/car_26.jpg"
+    },
+    {
+        "id": 27,
+        "merek": "Mazda",
+        "tahun_beli": 2010,
+        "tipe": "Sedan",
+        "transmisi": "Manual",
+        "jarak_tempuh": 142650,
+        "warna": "Kuning",
+        "harga": 200930746,
+        "daerah": "Denpasar",
+        "fitur_tambahan": [
+            "Power Steering",
+            "ABS"
+        ],
+        "gambar": "https://example.com/images/car_27.jpg"
+    },
+    {
+        "id": 28,
+        "merek": "Mazda",
+        "tahun_beli": 2012,
+        "tipe": "SUV",
+        "transmisi": "Manual",
+        "jarak_tempuh": 24994,
+        "warna": "Kuning",
+        "harga": 354011857,
+        "daerah": "Medan",
+        "fitur_tambahan": [
+            "ABS",
+            "Sensor Parkir",
+            "Airbag",
+            "Sunroof",
+            "AC"
+        ],
+        "gambar": "https://example.com/images/car_28.jpg"
+    },
+    {
+        "id": 29,
+        "merek": "Toyota",
+        "tahun_beli": 2019,
+        "tipe": "Convertible",
+        "transmisi": "Otomatis",
+        "jarak_tempuh": 64810,
+        "warna": "Kuning",
+        "harga": 349422233,
+        "daerah": "Surabaya",
+        "fitur_tambahan": [
+            "ABS",
+            "Power Steering",
+            "Sensor Parkir"
+        ],
+        "gambar": "https://example.com/images/car_29.jpg"
+    },
+    {
+        "id": 30,
+        "merek": "Honda",
+        "tahun_beli": 2020,
+        "tipe": "Crossover",
+        "transmisi": "Manual",
+        "jarak_tempuh": 63471,
+        "warna": "Abu-abu",
+        "harga": 105757259,
+        "daerah": "Makassar",
+        "fitur_tambahan": [
+            "Power Steering",
+            "Kamera Belakang",
+            "Sunroof",
+            "Sensor Parkir"
+        ],
+        "gambar": "https://example.com/images/car_30.jpg"
+    }
+]
