@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nama": "Budi",
+    "gambar": "https://i.pinimg.com/736x/24/3f/fa/243ffaa61ac551dd22e83fd607a96cb2.jpg",
+    "tanggal": "2025-04-20",
+    "mobil": "Toyota Avanza"
+  },
+    {
+    "id": 2,
+    "nama": "Tiara",
+    "gambar": "https://i.pinimg.com/736x/e2/85/25/e28525c80785659deb733b27b44d0ad5.jpg",
+    "tanggal": "2025-05-16",
+    "mobil": "Toyota Avanza"
+  },
+  {
+    "id": 3,
+    "nama": "Sinta",
+    "gambar": "https://i.pinimg.com/736x/a9/85/ff/a985ffec03e01881f0a85b0896a6ce14.jpg",
+    "tanggal": "2025-04-22",
+    "mobil": "Honda Brio"
+  }
+]

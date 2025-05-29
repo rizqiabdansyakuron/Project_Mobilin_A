@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nama": "Tiara",
+    "alamat": "Jakarta",
+    "kontak": "08123456789",
+    "gambar": "https://i.pinimg.com/736x/23/8e/28/238e28012c8d79abb969c79690b0d6b1.jpg"
+  },
+  {
+    "id": 2,
+    "nama": "Agus",
+    "alamat": "Bandung",
+    "kontak": "08198765432",
+    "gambar": "https://i.pinimg.com/736x/bf/b3/f3/bfb3f3fc110a080197f7ade45bb39d22.jpg"
+  }
+]

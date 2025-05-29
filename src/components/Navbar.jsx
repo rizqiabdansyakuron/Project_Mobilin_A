@@ -10,8 +10,7 @@ const menuGroups = [
     items: [
       { name: "Dashboard", path: "/" },
       { name: "Mobil", path: "/mobil" },
-      { name: "Customers", path: "/customers" },
-      { name: "Orders", path: "/orders" },
+      { name: "Pesan & Saran", path: "/pesansaran" },
       { name: "Test Drive", path: "/test-drive" },
       { name: "Pembeli", path: "/pembeli" },
     ],

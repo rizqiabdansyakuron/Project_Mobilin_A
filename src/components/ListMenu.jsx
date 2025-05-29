@@ -24,18 +24,8 @@ export default function ListMenu() {
             Dashboard
           </NavLink>
         </li>
-        <li>
-          <NavLink id="menu-2" to="/orders" className={menuClass}>
-            <BsBorderStyle className="mr-3 text-lg" />
-            Orders
-          </NavLink>
-        </li>
-        <li>
-          <NavLink id="menu-3" to="/Pembeli" className={menuClass}>
-            <BsFillPersonCheckFill className="mr-3 text-lg" />
-            Customers
-          </NavLink>
-        </li>
+      
+        
         <li>
           <NavLink id="menu-4" to="/user" className={menuClass}>
             <FaUserFriends className="mr-3 text-lg" />

@@ -31,14 +31,20 @@ export default function Sidebar() {
       } ${sidebarStyle} flex flex-col px-4 py-6 font-poppins transition-all duration-300 shadow-md`}
     >
       {/* Logo + Collapse Button */}
-      <div className="mb-6 flex justify-between items-center">
-        {!isCollapsed && (
-          <img src="/LOGO.png" alt="Logo" className="w-28" />
-        )}
-        <button onClick={toggleSidebar} className="text-lg">
-          {isCollapsed ? <FaChevronRight /> : <FaChevronLeft />}
-        </button>
-      </div>
+   <div className="mb-6 flex justify-between items-center">
+  {!isCollapsed ? (
+    <Link to="/">
+      <img src="/LOGO.png" alt="Logo" className="w-28" />
+    </Link>
+  ) : (
+    <Link to="/">
+      <img src="/LOGO.png" alt="Logo" className="w-8" />
+    </Link>
+  )}
+  <button onClick={toggleSidebar} className="text-lg">
+    {isCollapsed ? <FaChevronRight /> : <FaChevronLeft />}
+  </button>
+</div>
 
       <div className="flex-1 space-y-6 overflow-y-auto">
         {/* MENU UTAMA */}

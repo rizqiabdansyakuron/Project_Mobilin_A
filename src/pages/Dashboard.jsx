@@ -1,6 +1,7 @@
 import { FaStar, FaMoneyBillWave } from "react-icons/fa";
 import { LineChart, Line, Tooltip, ResponsiveContainer, CartesianGrid, XAxis, YAxis } from "recharts";
 import PageHeader from "../components/PageHeader";
+import QuoteBox from "../components/QuoteBox"; // ← import QuoteBox
 
 const data = [
   { name: "Sen", upload: 3 },
@@ -16,6 +17,11 @@ export default function Dashboard() {
   return (
     <div id="dashboard-container">
       <PageHeader />
+
+      {/* Quote Inspiratif */}
+      <div className="px-5">
+        <QuoteBox />
+      </div>
 
       <div className="p-5 grid md:grid-cols-3 gap-6">
         {/* Mobil Terfavorit */}

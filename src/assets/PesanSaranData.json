@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "username": "tiara_dev",
+    "email": "tiara@gmail.com",
+    "tanggal": "2025-05-28",
+    "pertanyaan": "Saya ingin tahu bagaimana garansi bekerja untuk mobil bekas."
+  },
+  {
+    "id": 2,
+    "username": "agus99",
+    "email": "agus@email.com",
+    "tanggal": "2025-05-27",
+    "pertanyaan": "Apa syarat minimum untuk pembelian kredit?"
+  },
+  {
+    "id": 3,
+    "username": "nina_k",
+    "email": "nina.k@email.com",
+    "tanggal": "2025-05-26",
+    "pertanyaan": "Apakah tersedia test drive di luar kota?"
+  },
+  {
+    "id": 4,
+    "username": "farhan_m",
+    "email": "farhan@email.com",
+    "tanggal": "2025-05-25",
+    "pertanyaan": "Bagaimana saya bisa memastikan mobil tidak pernah tabrakan?"
+  },
+  {
+    "id": 5,
+    "username": "amelia21",
+    "email": "amelia21@email.com",
+    "tanggal": "2025-05-24",
+    "pertanyaan": "Apakah harga di aplikasi masih bisa dinego?"
+  },
+  {
+    "id": 6,
+    "username": "rezza",
+    "email": "rezza@email.com",
+    "tanggal": "2025-05-23",
+    "pertanyaan": "Apakah bisa tukar tambah dengan mobil lama saya?"
+  },
+  {
+    "id": 7,
+    "username": "dianputri",
+    "email": "dian@email.com",
+    "tanggal": "2025-05-22",
+    "pertanyaan": "Berapa lama proses approval untuk pembiayaan?"
+  },
+  {
+    "id": 8,
+    "username": "rendy93",
+    "email": "rendy@email.com",
+    "tanggal": "2025-05-21",
+    "pertanyaan": "Bisakah saya melihat riwayat servis mobil?"
+  },
+  {
+    "id": 9,
+    "username": "fajar_xyz",
+    "email": "fajar@email.com",
+    "tanggal": "2025-05-20",
+    "pertanyaan": "Adakah promo spesial bulan ini?"
+  },
+  {
+    "id": 10,
+    "username": "salsa_rahma",
+    "email": "salsa@email.com",
+    "tanggal": "2025-05-19",
+    "pertanyaan": "Apakah saya bisa booking mobil untuk dicek di rumah?"
+  }
+]
