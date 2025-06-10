@@ -34,7 +34,7 @@ export default function Topbar({ onToggleSidebar }) {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 border-b border-gray-200 dark:border-gray-700">
+    <header className="bg-white dark:bg-gray-900 shadow-md  top-0 z-50 border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-3">
           <button
@@ -86,7 +86,7 @@ export default function Topbar({ onToggleSidebar }) {
             </div>
           ))}
 
-          <div className="flex items-center gap-4 pl-4 ml-2 border-l border-gray-300 dark:border-gray-600">
+          <div className="flex items-center gap-4 pl-4 ml-2 ">
             <button className="relative p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full">
               <FaBell className="text-lg" />
               <span className="absolute -top-1 -right-1 text-[10px] bg-red-500 text-white rounded-full px-1">

@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/navbar"; // jangan ubah penulisan navbar nya
 import LoadingScreen from "./components/LoadingScreen";
-import QuoteBox from "./components/QuoteBox";
+// import QuoteBox from "./components/QuoteBox";
 import './assets/tailwind.css';
 
 // Komponen utama
@@ -24,6 +24,7 @@ const FaqManager = lazy(() => import("./components/FaqManager"));
 const TeamManager = lazy(() => import("./components/Admin/TeamManager"));
 const JobManager = lazy(() => import("./components/Admin/JobManager"));
 const PesanSaranManager = lazy(() => import("./pages/Pesansaranmanager"));
+const Notes= lazy(() => import("./pages/Notes"));
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -37,9 +38,9 @@ function App() {
       {isSidebarOpen && <Sidebar />}
       <div id="main-content" className="flex-1">
         <Navbar onToggleSidebar={toggleSidebar} />
-        <div className="px-4">
+        {/* <div className="px-4">
           <QuoteBox />
-        </div>
+        </div> */}
 
         <div className="p-4">
           <Suspense fallback={<LoadingScreen />}>
@@ -53,13 +54,13 @@ function App() {
               <Route path="/test-drive" element={<TestDrive />} />
               <Route path="/test-drive/:id" element={<DetailTestDrive />} />
               <Route path="/pembeli" element={<Pembeli />} />
-
+              <Route path="/notes" element={<Notes />} />
               {/* Rute admin */}
               <Route path="/admin/artikel" element={<ArtikelManager />} />
               <Route path="/admin/faq" element={<FaqManager />} />
               <Route path="/admin/tim" element={<TeamManager />} />
               <Route path="/admin/lowongan" element={<JobManager />} />
-              <Route path="/pesansaran" element={<PesanSaranManager />} /> {/* ✅ Tambahkan di sini */}
+              <Route path="/pesansaran" element={<PesanSaranManager />} /> 
               <Route path="/pesansaran/:id" element={<DetailPesansaranManajer />} />
               {/* Fallback */}
               <Route path="*" element={<Errormobilin />} />
