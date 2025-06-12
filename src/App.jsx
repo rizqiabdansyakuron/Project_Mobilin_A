@@ -17,6 +17,7 @@ const DetailTestDrive = lazy(() => import("./pages/Detail/DetailTestDrive"));
 const DetailPesansaranManajer = lazy(() => import("./pages/DetailPesansaranManajer"));
 const Pembeli = lazy(() => import("./pages/Pembeli"));
 const Errormobilin = lazy(() => import("./pages/Errormobilin"));
+const ManajemenLokasi = lazy(() => import("./pages/ManajemenLokasi"));
 
 // Komponen tambahan
 const ArtikelManager = lazy(() => import("./components/ArtikelManager"));
@@ -62,6 +63,8 @@ function App() {
               <Route path="/admin/lowongan" element={<JobManager />} />
               <Route path="/pesansaran" element={<PesanSaranManager />} /> 
               <Route path="/pesansaran/:id" element={<DetailPesansaranManajer />} />
+              <Route path="/lokasi" element={<ManajemenLokasi />} />
+
               {/* Fallback */}
               <Route path="*" element={<Errormobilin />} />
             </Routes>

@@ -13,6 +13,7 @@ const menuGroups = [
       { name: "Pesan & Saran", path: "/pesansaran" },
       { name: "Test Drive", path: "/test-drive" },
       { name: "Pembeli", path: "/pembeli" },
+      { name: "Lokasi", path: "/lokasi" }, // ← Tambahan baru
     ],
   },
   {
@@ -25,7 +26,6 @@ const menuGroups = [
     ],
   },
 ];
-
 export default function Topbar({ onToggleSidebar }) {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
