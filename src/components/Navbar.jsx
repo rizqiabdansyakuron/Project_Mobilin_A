@@ -13,7 +13,6 @@ const menuGroups = [
       { name: "Mobil", path: "/mobil" },
       { name: "Pesan & Saran", path: "/pesansaran" },
       { name: "Test Drive", path: "/test-drive" },
-      { name: "Pembeli", path: "/pembeli" },
       { name: "Lokasi", path: "/lokasi" },
     ],
   },
