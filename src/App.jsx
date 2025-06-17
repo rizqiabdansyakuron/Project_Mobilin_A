@@ -17,7 +17,7 @@ const MobilDetail = lazy(() => import("./pages/Detail/DetailMobil"));
 const TestDrive = lazy(() => import("./pages/TestDrive"));
 const DetailTestDrive = lazy(() => import("./pages/Detail/DetailTestDrive"));
 const DetailPesansaranManajer = lazy(() => import("./pages/DetailPesansaranManajer"));
-const Pembeli = lazy(() => import("./pages/Pembeli"));
+// const Pembeli = lazy(() => import("./pages/Pembeli"));
 const Errormobilin = lazy(() => import("./pages/Errormobilin"));
 const ManajemenLokasi = lazy(() => import("./pages/ManajemenLokasi"));
 
@@ -54,7 +54,7 @@ function AppContent() {
               <Route path="/mobil/:id" element={<MobilDetail />} />
               <Route path="/test-drive" element={<TestDrive />} />
               <Route path="/test-drive/:id" element={<DetailTestDrive />} />
-              <Route path="/pembeli" element={<Pembeli />} />
+              {/* <Route path="/pembeli" element={<Pembeli />} /> */}
               <Route path="/notes" element={<Notes />} />
 
               {/* Admin */}
