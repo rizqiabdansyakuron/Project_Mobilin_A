@@ -9,7 +9,6 @@ const TeamManager = () => {
     divisi: "Penjualan",
   });
 
-  // Ambil data dari API saat komponen dimuat
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -22,18 +21,17 @@ const TeamManager = () => {
     fetchData();
   }, []);
 
-  // Tambahkan anggota baru ke API dan state
   const handleAdd = async () => {
     if (!newMember.nama || !newMember.jabatan) return;
 
     const payload = {
       ...newMember,
-      foto: "/placeholder-avatar.jpg", // Default foto jika tidak ada
+      foto: "/placeholder-avatar.jpg",
     };
 
     try {
-      const created = await karyawanAPI.create([payload]); // Supabase perlu array
-      const updatedData = await karyawanAPI.fetch(); // Ambil ulang data dari server
+      await karyawanAPI.create([payload]);
+      const updatedData = await karyawanAPI.fetch();
       setTeam(updatedData);
       setNewMember({ nama: "", jabatan: "", divisi: "Penjualan" });
     } catch (error) {
@@ -41,7 +39,6 @@ const TeamManager = () => {
     }
   };
 
-  // Hapus anggota dari API dan perbarui state
   const handleDelete = async (id) => {
     try {
       await karyawanAPI.delete(id);
@@ -52,47 +49,46 @@ const TeamManager = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+    <div className="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden p-6">
+      <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-2">
         <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-          />
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
         Manajemen Tim
       </h2>
 
       {/* Form Tambah */}
-      <div className="bg-gray-50 p-5 rounded-lg mb-8">
+      <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg mb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Nama Lengkap</label>
             <input
               type="text"
               value={newMember.nama}
               onChange={(e) => setNewMember({ ...newMember, nama: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
               placeholder="Nama anggota tim"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Jabatan</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Jabatan</label>
             <input
               type="text"
               value={newMember.jabatan}
               onChange={(e) => setNewMember({ ...newMember, jabatan: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
               placeholder="Posisi/jabatan"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Divisi</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Divisi</label>
             <select
               value={newMember.divisi}
               onChange={(e) => setNewMember({ ...newMember, divisi: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
             >
               <option value="Penjualan">Penjualan</option>
               <option value="Layanan">Layanan</option>
@@ -115,8 +111,8 @@ const TeamManager = () => {
       {/* Daftar Anggota */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {team.map((member) => (
-          <div key={member.id} className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-            <div className="w-full aspect-[3/2] bg-gray-100 overflow-hidden">
+          <div key={member.id} className="border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div className="w-full aspect-[3/2] bg-gray-100 dark:bg-gray-700 overflow-hidden">
               <img
                 src={member.foto || "/placeholder-avatar.jpg"}
                 alt={member.nama}
@@ -127,13 +123,13 @@ const TeamManager = () => {
             <div className="p-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-bold text-lg">{member.nama}</h3>
-                  <p className="text-gray-600">{member.jabatan}</p>
+                  <h3 className="font-bold text-lg text-gray-800 dark:text-white">{member.nama}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">{member.jabatan}</p>
                   <span className={`inline-block mt-2 px-2 py-1 text-xs font-semibold rounded-full ${
-                    member.divisi === "Penjualan" ? "bg-blue-100 text-blue-800" :
-                    member.divisi === "Layanan" ? "bg-green-100 text-green-800" :
-                    member.divisi === "Marketing" ? "bg-purple-100 text-purple-800" :
-                    "bg-gray-100 text-gray-800"
+                    member.divisi === "Penjualan" ? "bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100" :
+                    member.divisi === "Layanan" ? "bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100" :
+                    member.divisi === "Marketing" ? "bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100" :
+                    "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200"
                   }`}>
                     {member.divisi}
                   </span>

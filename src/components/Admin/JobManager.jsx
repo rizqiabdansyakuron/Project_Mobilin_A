@@ -4,11 +4,13 @@ import { lowonganAPI } from "../../services/lowonganAPI";
 import Loading from "../../components/LoadingSpinner";
 import Errormobilin from "../../pages/Errormobilin";
 import EmptyState from "../EmptyState";
+import { useTheme } from "../../context/ThemeContext";
 
 export default function JobManager() {
   const [lowonganData, setLowonganData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { isDark } = useTheme();
 
   const fetchLowongan = async () => {
     try {
@@ -28,7 +30,7 @@ export default function JobManager() {
     if (!window.confirm("Yakin ingin menghapus lowongan ini?")) return;
     try {
       await lowonganAPI.delete(id);
-      await fetchLowongan(); // Refresh data
+      await fetchLowongan();
     } catch (err) {
       alert("Gagal menghapus lowongan");
     }
@@ -38,16 +40,22 @@ export default function JobManager() {
     fetchLowongan();
   }, []);
 
+  const baseText = isDark ? "text-gray-100" : "text-gray-900";
+  const bgBase = isDark ? "bg-gray-900" : "bg-white";
+  const tableHeaderBg = isDark ? "bg-gray-800 text-gray-200" : "bg-gray-100 text-gray-800";
+  const rowHover = isDark ? "hover:bg-gray-800" : "hover:bg-gray-50";
+  const borderColor = isDark ? "border-gray-700" : "border-gray-200";
+
   if (loading) return <Loading message="Memuat data lowongan..." />;
   if (error) return <Errormobilin message={error} />;
   if (lowonganData.length === 0)
     return (
-      <div className="p-8">
+      <div className={`p-8 ${bgBase} ${baseText} min-h-screen`}>
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-xl font-bold">Manajemen Lowongan</h1>
           <Link
             to="/admin/lowongan/tambah"
-            className="rounded bg-gray-800 px-4 py-2 text-white hover:bg-yellow-500 transition"
+            className="rounded bg-yellow-500 px-4 py-2 text-white hover:bg-yellow-600 transition"
           >
             + Tambah Lowongan
           </Link>
@@ -57,20 +65,20 @@ export default function JobManager() {
     );
 
   return (
-    <div className="p-8 bg-white min-h-screen">
+    <div className={`p-8 ${bgBase} ${baseText} min-h-screen`}>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-800">Manajemen Lowongan</h1>
+        <h1 className="text-2xl font-bold">Manajemen Lowongan</h1>
         <Link
           to="/admin/lowongan/tambah"
-          className="rounded bg-gray-800 px-4 py-2 text-white hover:bg-yellow-500 transition"
+          className="rounded bg-yellow-500 px-4 py-2 text-white hover:bg-yellow-600 transition"
         >
           + Tambah Lowongan
         </Link>
       </div>
 
-      <div className="overflow-x-auto shadow border rounded-xl">
-        <table className="min-w-full divide-y divide-gray-200 text-sm text-left">
-          <thead className="bg-gray-100">
+      <div className={`overflow-x-auto shadow border ${borderColor} rounded-xl`}>
+        <table className="min-w-full divide-y divide-gray-300 text-sm text-left">
+          <thead className={tableHeaderBg}>
             <tr>
               <th className="px-4 py-3">#</th>
               <th className="px-4 py-3">Posisi</th>
@@ -80,9 +88,9 @@ export default function JobManager() {
               <th className="px-4 py-3 text-center">Aksi</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-100">
+          <tbody className="divide-y divide-gray-300">
             {lowonganData.map((job, index) => (
-              <tr key={job.id_lowongan} className="hover:bg-gray-50">
+              <tr key={job.id_lowongan} className={rowHover}>
                 <td className="px-4 py-3">{index + 1}</td>
                 <td className="px-4 py-3 font-medium">{job.posisi}</td>
                 <td className="px-4 py-3">{job.lokasi?.kota || "-"}</td>
@@ -109,7 +117,7 @@ export default function JobManager() {
                   </button>
                   <Link
                     to={`/karir/${job.id_lowongan}`}
-                    className="inline-block px-3 py-1 text-sm rounded bg-gray-800 text-white hover:bg-yellow-500"
+                    className="inline-block px-3 py-1 text-sm rounded bg-gray-700 text-white hover:bg-yellow-500"
                   >
                     Detail
                   </Link>
