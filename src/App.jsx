@@ -1,7 +1,7 @@
 import React, { Suspense, lazy, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Navbar from "./components/navbar"; // jangan ubah penulisan
+import Navbar from "./components/Navbar"; // jangan ubah penulisan
 import LoadingScreen from "./components/LoadingScreen";
 // import QuoteBox from "./components/QuoteBox";
 import './assets/tailwind.css';
