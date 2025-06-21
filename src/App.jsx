@@ -27,8 +27,6 @@ const FaqManager = lazy(() => import("./components/FaqManager"));
 const TeamManager = lazy(() => import("./components/Admin/TeamManager"));
 const JobManager = lazy(() => import("./components/Admin/JobManager"));
 const PesanSaranManager = lazy(() => import("./pages/Pesansaranmanager"));
-const Notes = lazy(() => import("./pages/Notes"));
-
 function AppContent() {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
   const { isDark } = useTheme();
@@ -55,7 +53,7 @@ function AppContent() {
               <Route path="/test-drive" element={<TestDrive />} />
               <Route path="/test-drive/:id" element={<DetailTestDrive />} />
               {/* <Route path="/pembeli" element={<Pembeli />} /> */}
-              <Route path="/notes" element={<Notes />} />
+           
 
               {/* Admin */}
               <Route path="/admin/artikel" element={<ArtikelManager />} />
