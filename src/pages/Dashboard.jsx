@@ -1,7 +1,7 @@
 import { FaStar, FaMoneyBillWave, FaCar, FaUser } from "react-icons/fa";
 import {
-  LineChart,
-  Line,
+  BarChart,
+  Bar,
   Tooltip,
   ResponsiveContainer,
   CartesianGrid,
@@ -9,7 +9,7 @@ import {
   YAxis,
 } from "recharts";
 import PageHeader from "../components/PageHeader";
-import { useTheme } from "../context/ThemeContext"; // pastikan path sesuai
+import { useTheme } from "../context/ThemeContext";
 
 const data = [
   { name: "Sen", upload: 3 },
@@ -31,11 +31,13 @@ const recentActivities = [
 export default function Dashboard() {
   const { isDark } = useTheme();
 
-  const background = isDark ? "bg-gray-900" : "bg-gray-100";
+  const background = isDark
+    ? "bg-gray-900"
+    : "bg-gradient-to-br from-white via-blue-50 to-blue-100";
   const cardBg = isDark ? "bg-gray-800" : "bg-white";
-  const textMain = isDark ? "text-white" : "text-gray-800";
+  const textMain = isDark ? "text-white" : "text-gray-700";
   const textSub = isDark ? "text-gray-400" : "text-gray-500";
-  const hoverItem = isDark ? "hover:bg-gray-600" : "hover:bg-gray-100";
+  const hoverItem = isDark ? "hover:bg-gray-600" : "hover:bg-blue-100";
 
   return (
     <div className={`min-h-screen p-6 transition-colors duration-300 ${background}`}>
@@ -86,13 +88,13 @@ export default function Dashboard() {
 
       {/* Grafik dan Aktivitas */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Grafik Upload */}
+        {/* Grafik Upload - Bar Chart */}
         <div className={`shadow rounded-2xl p-5 col-span-2 ${cardBg}`}>
           <h2 className={`text-lg font-semibold mb-4 ${textMain}`}>
             Tren Upload Mobil / Minggu
           </h2>
           <ResponsiveContainer width="100%" height={250}>
-            <LineChart data={data}>
+            <BarChart data={data}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" stroke={isDark ? "#ccc" : "#555"} />
               <YAxis hide />
@@ -103,15 +105,13 @@ export default function Dashboard() {
                   color: isDark ? "#fff" : "#000",
                 }}
               />
-              <Line
-                type="monotone"
+              <Bar
                 dataKey="upload"
-                stroke="#6366f1"
-                strokeWidth={3}
-                dot={{ r: 5 }}
-                activeDot={{ r: 8 }}
+                fill="#6366f1"
+                radius={[6, 6, 0, 0]}
+                barSize={30}
               />
-            </LineChart>
+            </BarChart>
           </ResponsiveContainer>
         </div>
 
