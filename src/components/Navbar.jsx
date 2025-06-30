@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaSearch, FaBell, FaLanguage } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
@@ -23,6 +23,7 @@ const menuGroups = [
       { name: "FAQ", path: "/admin/faq" },
       { name: "Tim", path: "/admin/tim" },
       { name: "Lowongan", path: "/admin/lowongan" },
+      { name: "Kontak", path: "/admin/kontak" }, // ✅ Tambahan baru
     ],
   },
 ];
@@ -33,19 +34,37 @@ export default function Topbar({ onToggleSidebar }) {
   const [openDropdown, setOpenDropdown] = useState(null);
   const { isDark } = useTheme();
 
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
+
   const isActive = (path) => location.pathname === path;
 
-  return (
-    <header className={`sticky top-0 z-50 ${isDark ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        {/* Tombol toggle sidebar */}
-        <button 
-          onClick={onToggleSidebar} 
-          className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-        >
-          <FaBars />
-        </button>
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
+      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+        setShowNavbar(false); // Scroll ke bawah
+      } else {
+        setShowNavbar(true); // Scroll ke atas
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={clsx(
+        "sticky top-0 z-50 transition-transform duration-300",
+        isDark ? "bg-gray-900 text-white" : "bg-white text-gray-900",
+        showNavbar ? "translate-y-0" : "-translate-y-full"
+      )}
+    >
+      <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <div className="hidden md:flex flex-1 max-w-md mx-6 relative">
           <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
           <input

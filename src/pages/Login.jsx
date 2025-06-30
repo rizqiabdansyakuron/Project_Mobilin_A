@@ -29,15 +29,15 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-white px-4">
       <div className="w-full max-w-sm p-6 bg-white rounded-md shadow-md">
         <div className="flex justify-center mb-6">
-          <img
-            src="/img/LOGO.png"
-            alt="Mobilin Logo"
-            className="h-14 w-14 object-contain"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = "https://via.placeholder.com/56";
-            }}
-          />
+     <img
+  src="/LOGO.png"
+  alt="Mobilin Logo"
+  className="h-30 w-30 object-contain"
+  onError={(e) => {
+    e.target.onerror = null;
+    e.target.src = "https://via.placeholder.com/80";
+  }}
+/>
         </div>
         <h2 className="text-2xl font-bold text-center text-purple-700 mb-6">
           Welcome back.

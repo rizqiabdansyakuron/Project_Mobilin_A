@@ -35,7 +35,15 @@ export default function Sidebar() {
         </Section>
 
         <Section title="Support" isCollapsed={isCollapsed}>
-          <NavItem to="/support/bantuan" icon={<FaComments className="text-cyan-400" />} label="Bantuan" isCollapsed={isCollapsed} hoverStyle={hoverStyle} />
+         <Section title="Support" isCollapsed={isCollapsed}>
+  <NavItem
+    to="/bantuan"
+    icon={<FaComments className="text-cyan-400" />}
+    label="Bantuan"
+    isCollapsed={isCollapsed}
+    hoverStyle={hoverStyle}
+  />
+</Section>
           <NavItem to="/support/pengaturan" icon={<FaCogs className="text-pink-400" />} label="Pengaturan" isCollapsed={isCollapsed} hoverStyle={hoverStyle} />
         </Section>
       </div>

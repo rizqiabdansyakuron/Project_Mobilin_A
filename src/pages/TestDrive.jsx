@@ -1,67 +1,140 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaPlus, FaEye, FaEdit, FaTrash } from 'react-icons/fa';
-import testDriveData from '../assets/testDriveData.json';
-import PageHeader from '../components/PageHeader';
-import { useTheme } from '../context/ThemeContext';
+import { useEffect, useState } from "react";
+import { testDriveAPI } from "../services/testdriveAPI";
+import { FaTrash, FaCheck, FaTimes, FaPlus } from "react-icons/fa";
+import { useTheme } from "../context/ThemeContext";
 
-const TestDrive = () => {
+export default function KelolaTestDrive() {
   const { isDark } = useTheme();
+  const [list, setList] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [form, setForm] = useState({
+    nama: "",
+    nohp: "",
+    tanggal: "",
+    waktu: "",
+    car_id: 1,
+  });
 
-  const bgMain = isDark ? 'bg-gray-900 text-white' : 'bg-white text-gray-900';
-  const bgTableHead = isDark ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800';
-  const border = isDark ? 'border-gray-700' : 'border-gray-200';
-  const bgCard = isDark ? 'bg-gray-800' : 'bg-white';
+  const fetchData = async () => {
+    try {
+      const data = await testDriveAPI.fetch();
+      setList(data);
+    } catch (error) {
+      console.error("Gagal fetch test drive:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleTambah = async () => {
+    try {
+      await testDriveAPI.create(form);
+      fetchData();
+      setForm({ nama: "", nohp: "", tanggal: "", waktu: "", car_id: 1 });
+    } catch (error) {
+      console.error("Gagal simpan test drive:", error);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    if (!confirm("Yakin ingin menghapus data ini?")) return;
+    try {
+      await testDriveAPI.delete(id);
+      fetchData();
+    } catch (error) {
+      console.error("Gagal hapus:", error);
+    }
+  };
+
+  // Dynamic classes based on theme
+  const containerClass = isDark ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900";
+  const inputClass = `border px-3 py-2 rounded focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 ${
+    isDark ? "bg-gray-800 border-gray-700 text-white placeholder-gray-400" 
+           : "bg-white border-gray-300 text-gray-800 placeholder-gray-500"
+  }`;
+  const tableHeaderClass = isDark ? "bg-gray-800 text-gray-100" : "bg-gray-100 text-gray-900";
+  const tableRowClass = isDark ? "border-gray-700 hover:bg-gray-800" : "border-gray-200 hover:bg-gray-50";
+  const deleteBtnClass = isDark ? "text-red-400 hover:text-red-300" : "text-red-600 hover:text-red-800";
+
+  if (loading) return <p className={`p-4 ${isDark ? "text-gray-300" : "text-gray-600"}`}>Loading data test drive...</p>;
 
   return (
-    <div className={`p-6 rounded-xl shadow ${bgMain}`}>
-      <div className="flex items-center justify-between mb-4">
-        <PageHeader title="Kelola Test Drive" />
-        <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition duration-300">
-          <FaPlus />
-          Add Test Drive
+    <div className={`p-6 rounded-xl shadow-md transition-colors duration-300 ${containerClass}`}>
+      <h2 className={`text-2xl font-bold mb-4 ${isDark ? "text-white" : "text-gray-900"}`}>
+        Kelola Test Drive
+      </h2>
+
+      {/* Form Tambah */}
+      <div className="mb-6 grid md:grid-cols-5 gap-4">
+        <input
+          type="text"
+          placeholder="Nama"
+          value={form.nama}
+          onChange={(e) => setForm({ ...form, nama: e.target.value })}
+          className={inputClass}
+        />
+        <input
+          type="text"
+          placeholder="No HP"
+          value={form.nohp}
+          onChange={(e) => setForm({ ...form, nohp: e.target.value })}
+          className={inputClass}
+        />
+        <input
+          type="date"
+          value={form.tanggal}
+          onChange={(e) => setForm({ ...form, tanggal: e.target.value })}
+          className={inputClass}
+        />
+        <input
+          type="time"
+          value={form.waktu}
+          onChange={(e) => setForm({ ...form, waktu: e.target.value })}
+          className={inputClass}
+        />
+        <button
+          onClick={handleTambah}
+          className="bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-2 rounded flex items-center justify-center gap-2 transition-colors duration-200"
+        >
+          <FaPlus /> Tambah
         </button>
       </div>
 
-      <div className={`overflow-x-auto border rounded-lg shadow-md mt-4 ${border}`}>
-        <table className="min-w-full text-sm">
-          <thead className={`${bgTableHead}`}>
-            <tr>
-              <th className="p-3 text-left">Gambar</th>
-              <th className="p-3 text-left">Nama</th>
-              <th className="p-3 text-left">Tanggal</th>
-              <th className="p-3 text-left">Mobil</th>
-              <th className="p-3 text-left">Aksi</th>
+      {/* Table Data */}
+      <div className="overflow-x-auto">
+        <table className="min-w-full table-auto text-sm">
+          <thead>
+            <tr className={`text-left ${tableHeaderClass}`}>
+              <th className="px-4 py-2">Nama</th>
+              <th className="px-4 py-2">No HP</th>
+              <th className="px-4 py-2">Tanggal</th>
+              <th className="px-4 py-2">Waktu</th>
+              <th className="px-4 py-2">Car ID</th>
+              <th className="px-4 py-2">Aksi</th>
             </tr>
           </thead>
           <tbody>
-            {testDriveData.map((testDrive) => (
-              <tr key={testDrive.id} className={`border-t ${border}`}>
-                <td className="p-3">
-                  <img
-                    src={testDrive.gambar}
-                    alt={testDrive.nama}
-                    className="w-20 h-20 object-cover rounded"
-                  />
-                </td>
-                <td className="p-3">{testDrive.nama}</td>
-                <td className="p-3">{testDrive.tanggal}</td>
-                <td className="p-3">{testDrive.mobil}</td>
-                <td className="p-3 space-y-1">
-                  <Link
-                    to={`/test-drive/${testDrive.id}`}
-                    className="flex items-center justify-center gap-1 bg-green-500 hover:bg-green-600 text-white px-2 py-1 rounded"
+            {list.map((item) => (
+              <tr 
+                key={item.id_test_drive} 
+                className={`border-b ${tableRowClass} transition-colors duration-200`}
+              >
+                <td className="px-4 py-2">{item.nama}</td>
+                <td className="px-4 py-2">{item.nohp}</td>
+                <td className="px-4 py-2">{item.tanggal}</td>
+                <td className="px-4 py-2">{item.waktu}</td>
+                <td className="px-4 py-2">{item.car_id}</td>
+                <td className="px-4 py-2">
+                  <button
+                    onClick={() => handleDelete(item.id_test_drive)}
+                    className={`${deleteBtnClass} transition-colors duration-200`}
+                    title="Hapus"
                   >
-                    <FaEye className="w-4 h-4" />
-                    Detail
-                  </Link>
-                  <button className="flex items-center justify-center gap-1 w-full bg-yellow-500 hover:bg-yellow-600 text-white px-2 py-1 rounded">
-                    <FaEdit className="w-4 h-4" />
-                    Edit
-                  </button>
-                  <button className="flex items-center justify-center gap-1 w-full bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded">
-                    <FaTrash className="w-4 h-4" />
-                    Delete
+                    <FaTrash />
                   </button>
                 </td>
               </tr>
@@ -71,6 +144,4 @@ const TestDrive = () => {
       </div>
     </div>
   );
-};
-
-export default TestDrive;
+}
