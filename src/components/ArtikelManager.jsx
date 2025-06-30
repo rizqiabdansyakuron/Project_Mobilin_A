@@ -111,7 +111,7 @@ const ArtikelManager = () => {
                 <button
                   onClick={() => setArtikel(artikel.filter((art) => art.id !== item.id))}
                   className="text-red-500 hover:text-red-700 p-1"
-                  title="Hapus Artikel"
+                  title="Hapus Artikel" 
                 >
                   <FaTrashAlt className="w-5 h-5" />
                 </button>
