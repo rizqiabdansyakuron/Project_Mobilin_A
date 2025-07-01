@@ -102,6 +102,10 @@ export default function ManajemenLokasi() {
   if (lokasiData.length === 0) return <EmptyState message="Belum ada data lokasi." />;
 
   return (
+//     <div
+//   className="p-6 md:p-10 min-h-screen bg-cover bg-center bg-no-repeat"
+//   style={{ backgroundImage: "url('/img/uwp4503445.jpeg')" }}
+// ></div>
     <div className="p-6 md:p-10">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-gray-800">Manajemen Lokasi</h1>

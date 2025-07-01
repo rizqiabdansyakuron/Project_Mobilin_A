@@ -9,9 +9,9 @@ const menuGroups = [
   {
     label: "Manajemen",
     items: [
-      { name: "Dashboard", path: "/" },
+      // { name: "Dashboard", path: "/" },
       { name: "Mobil", path: "/mobil" },
-      { name: "Pesan & Saran", path: "/pesansaran" },
+      // { name: "Pesan & Saran", path: "/pesansaran" },
       { name: "Test Drive", path: "/test-drive" },
       { name: "Lokasi", path: "/lokasi" },
     ],

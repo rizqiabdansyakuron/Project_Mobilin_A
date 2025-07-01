@@ -1,529 +1,705 @@
 [
-    {
-        "id": 1,
-        "merek": "Mitsubishi",
-        "tahun_beli": 2016,
-        "tipe": "MPV",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 116891,
-        "warna": "Abu-abu",
-        "harga": 245325199,
-        "daerah": "Balikpapan",
-        "fitur_tambahan": [
-            "Power Steering",
-            "Airbag",
-            "Sensor Parkir",
-            "Sunroof"
-        ],
-        "gambar": "https://i.pinimg.com/736x/25/e3/86/25e386e75a1b1857009a2d61a2d36948.jpg"
+  {
+    "id": 1,
+    "merek": "Mitsubishi",
+    "nama": "Pajero Sport DAKAR 4x2 AT",
+    "tahun_beli": 2018,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 32000,
+    "warna": "Hitam",
+    "harga": 480000000,
+    "daerah": "Surabaya",
+    "fitur_tambahan": ["Airbag", "AC", "Power Steering", "Kamera Belakang"],
+    "gambar": "/image/car/black-mitsubishi-pajero-sport-dakar.png",
+    "penjual": {
+      "nama": "Andi Motor",
+      "kontak": "081234567890",
+      "rating": 4.8
     },
-    {
-        "id": 2,
-        "merek": "Honda",
-        "tahun_beli": 2020,
-        "tipe": "SUV",
-        "transmisi": "Manual",
-        "jarak_tempuh": 105499,
-        "warna": "Biru",
-        "harga": 315621997,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "ABS",
-            "Airbag",
-            "Kamera Belakang",
-            "Bluetooth",
-            "AC"
-        ],
-        "gambar": "public/img/mobil biru lagi lagi.png"
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2023-12-31",
+      "gratis_ongkir": true
     },
-    {
-        "id": 3,
-        "merek": "Toyota",
-        "tahun_beli": 2010,
-        "tipe": "Crossover",
-        "transmisi": "Manual",
-        "jarak_tempuh": 53983,
-        "warna": "Kuning",
-        "harga": 169058072,
-        "daerah": "Medan",
-        "fitur_tambahan": [
-            "Sunroof",
-            "Airbag",
-            "ABS",
-            "Sensor Parkir",
-            "Bluetooth"
-        ],
-        "gambar": "https://lh7-us.googleusercontent.com/docsz/AD_4nXcfjstqVyag4xvMr_rUFaUwIEwp1yUVhilREGUYhaMqtgQ2p4M1G1KoEaIjsoYdjdcAUUxWPmv4QS46IMMP6FVHLlS-weKzfjx71AldjSNXISYn-4ldw0cRSgipWfiKQrVsMKHX5ofibtrBV0O3B4VSo68b?key=BXKS2UHNgOayQWm9_3LeHA"
-    },
-    {
-        "id": 4,
-        "merek": "Mazda",
-        "tahun_beli": 2016,
-        "tipe": "MPV",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 137055,
-        "warna": "Kuning",
-        "harga": 233982213,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "AC",
-            "Kamera Belakang",
-            "ABS"
-        ],
-        "gambar": "public/img/mobil kuning.png"
-    },
-    {
-        "id": 5,
-        "merek": "Mitsubishi",
-        "tahun_beli": 2022,
-        "tipe": "Sedan",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 95272,
-        "warna": "Biru",
-        "harga": 219499931,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "AC",
-            "Sensor Parkir",
-            "Sunroof",
-            "ABS"
-        ],
-        "gambar": "public/img/mobil biru.png"
-    },
-    {
-        "id": 6,
-        "merek": "Toyota",
-        "tahun_beli": 2020,
-        "tipe": "Crossover",
-        "transmisi": "Manual",
-        "jarak_tempuh": 111040,
-        "warna": "Biru",
-        "harga": 339064414,
-        "daerah": "Yogyakarta",
-        "fitur_tambahan": [
-            "Sensor Parkir",
-            "Sunroof"
-        ],
-        "gambar": "https://imgcdn.oto.com/medium/gallery/color/38/2304/toyota-corolla-cross-color-488794.jpg"
-    },
-    {
-        "id": 7,
-        "merek": "Wuling",
-        "tahun_beli": 2013,
-        "tipe": "Coupe",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 67259,
-        "warna": "Hitam",
-        "harga": 131880808,
-        "daerah": "Denpasar",
-        "fitur_tambahan": [
-            "Bluetooth",
-            "Sensor Parkir",
-            "Power Steering"
-        ],
-        "gambar": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/98/MTA-54483208/wuling_wuling_new_cortez_ex_hitam_full01_iydo181l.jpg"
-    },
-    {
-        "id": 8,
-        "merek": "Hyundai",
-        "tahun_beli": 2015,
-        "tipe": "MPV",
-        "transmisi": "Manual",
-        "jarak_tempuh": 124797,
-        "warna": "Merah",
-        "harga": 234598284,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "Bluetooth",
-            "Sensor Parkir",
-            "Sunroof",
-            "ABS"
-        ],
-        "gambar": "https://www.rydersofwarrington.co.uk/media/images/52595717/51000945DragonRedPearl.png"
-    },
-    {
-        "id": 9,
-        "merek": "Daihatsu",
-        "tahun_beli": 2021,
-        "tipe": "Hatchback",
-        "transmisi": "Manual",
-        "jarak_tempuh": 17970,
-        "warna": "Kuning",
-        "harga": 389105259,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "Bluetooth",
-            "Kamera Belakang",
-            "ABS",
-            "AC"
-        ],
-        "gambar": "https://res.cloudinary.com/mufautoshow/image/upload/f_auto,f_auto/w_1200/v1681350145/moas/news/1681350137_daihatsu-all-new-ayla-upgrade-total-jadi-semakin-sporty.png"
-    },
-    {
-        "id": 10,
-        "merek": "Wuling",
-        "tahun_beli": 2012,
-        "tipe": "Sedan",
-        "transmisi": "Manual",
-        "jarak_tempuh": 86570,
-        "warna": "Hijau",
-        "harga": 251948143,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "Power Steering",
-            "Sunroof",
-            "Kamera Belakang"
-        ],
-        "gambar": "https://imgcdn.oto.com/large/gallery/color/110/2845/wuling-binguo-ev-color-458984.jpg"
-    },
-    {
-        "id": 11,
-        "merek": "Toyota",
-        "tahun_beli": 2014,
-        "tipe": "Convertible",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 27487,
-        "warna": "Putih",
-        "harga": 461575066,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "Kamera Belakang",
-            "Sensor Parkir"
-        ],
-        "gambar": "public/img/mobil putih.png"
-    },
-    {
-        "id": 12,
-        "merek": "Honda",
-        "tahun_beli": 2011,
-        "tipe": "Hatchback",
-        "transmisi": "Manual",
-        "jarak_tempuh": 148627,
-        "warna": "Putih",
-        "harga": 381537618,
-        "daerah": "Medan",
-        "fitur_tambahan": [
-            "Power Steering",
-            "Sensor Parkir",
-            "AC",
-            "Kamera Belakang",
-            "Sunroof"
-        ],
-        "gambar": "https://pusathondajabodetabek.com/assets/img/product/city-car-hatchback/city-hatchback/platinum-white-pearl.png"
-    },
-    {
-        "id": 13,
-        "merek": "Honda",
-        "tahun_beli": 2020,
-        "tipe": "SUV",
-        "transmisi": "Manual",
-        "jarak_tempuh": 126188,
-        "warna": "Abu-abu",
-        "harga": 478899350,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "ABS",
-            "AC",
-            "Bluetooth",
-            "Kamera Belakang",
-            "Sunroof"
-        ],
-        "gambar": "https://hondakotamobagu.com/wp-content/uploads/2022/07/Harga-Mobil-Honda-CR-V-di-Honda-Manado-dan-Kotamobagu-Martadinata-2Sales-Dealer-Mobil-Honda-di-Manado-dan-Kotamobagu-Sulawesi-Utara-indonesia.png"
-    },
-    {
-        "id": 14,
-        "merek": "Suzuki",
-        "tahun_beli": 2020,
-        "tipe": "Pickup",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 89748,
-        "warna": "Hitam",
-        "harga": 195298476,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "Sensor Parkir",
-            "Bluetooth"
-        ],
-        "gambar": "https://www.suzuki-cikampek.com/wp-content/uploads/2018/04/Mega-Carry-Black-1.jpg"
-    },
-    {
-        "id": 15,
-        "merek": "Wuling",
-        "tahun_beli": 2010,
-        "tipe": "Coupe",
-        "transmisi": "Manual",
-        "jarak_tempuh": 65443,
-        "warna": "Hitam",
-        "harga": 325071306,
-        "daerah": "Bandung",
-        "fitur_tambahan": [
-            "Airbag",
-            "ABS"
-        ],
-        "gambar": "https://imgcdn.oto.com/large/gallery/color/110/2798/wuling-almaz-rs-2023-color-730355.jpg"
-    },
-    {
-        "id": 16,
-        "merek": "Honda",
-        "tahun_beli": 2018,
-        "tipe": "Sedan",
-        "transmisi": "Manual",
-        "jarak_tempuh": 77696,
-        "warna": "Kuning",
-        "harga": 472325146,
-        "daerah": "Denpasar",
-        "fitur_tambahan": [
-            "ABS",
-            "Kamera Belakang",
-            "Bluetooth"
-        ],
-        "gambar": "https://down-id.img.susercontent.com/file/id-11134207-7quky-lhvyag5anw2m29"
-    },
-    {
-        "id": 17,
-        "merek": "Daihatsu",
-        "tahun_beli": 2019,
-        "tipe": "Crossover",
-        "transmisi": "Manual",
-        "jarak_tempuh": 21413,
-        "warna": "Biru",
-        "harga": 393987369,
-        "daerah": "Yogyakarta",
-        "fitur_tambahan": [
-            "AC",
-            "Bluetooth",
-            "Airbag",
-            "Kamera Belakang",
-            "Sunroof"
-        ],
-        "gambar": "public/img/mobil biru lagi.png"
-    },
-    {
-        "id": 18,
-        "merek": "Mitsubishi",
-        "tahun_beli": 2010,
-        "tipe": "Pickup",
-        "transmisi": "Manual",
-        "jarak_tempuh": 125049,
-        "warna": "Silver",
-        "harga": 87519451,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "Airbag",
-            "AC",
-            "ABS"
-        ],
-        "gambar": "https://www.carmudi.co.id/journal/wp-content/uploads/2019/01/carry-pu-wd-silver.jpg"
-    },
-    {
-        "id": 19,
-        "merek": "Daihatsu",
-        "tahun_beli": 2014,
-        "tipe": "SUV",
-        "transmisi": "Manual",
-        "jarak_tempuh": 98590,
-        "warna": "Hitam",
-        "harga": 215135503,
-        "daerah": "Surabaya",
-        "fitur_tambahan": [
-            "ABS",
-            "Kamera Belakang",
-            "Power Steering"
-        ],
-        "gambar": "https://imgcdn.oto.com/large/gallery/color/7/1669/daihatsu-terios-color-969804.jpg"
-    },
-    {
-        "id": 20,
-        "merek": "Hyundai",
-        "tahun_beli": 2011,
-        "tipe": "Convertible",
-        "transmisi": "Manual",
-        "jarak_tempuh": 40523,
-        "warna": "Biru",
-        "harga": 119732492,
-        "daerah": "Balikpapan",
-        "fitur_tambahan": [
-            "Kamera Belakang",
-            "Sensor Parkir",
-            "Sunroof",
-            "Power Steering"
-        ],
-        "gambar": "https://hyundai-mobil.id/wp-content/uploads/2021/12/Galaxy-Blue-Pearl.png"
-    },
-    {
-        "id": 21,
-        "merek": "Nissan",
-        "tahun_beli": 2014,
-        "tipe": "Convertible",
-        "transmisi": "Manual",
-        "jarak_tempuh": 113372,
-        "warna": "Kuning",
-        "harga": 114368248,
-        "daerah": "Semarang",
-        "fitur_tambahan": [
-            "Kamera Belakang",
-            "Bluetooth",
-            "ABS",
-            "AC"
-        ],
-        "gambar": "public/img/mobil kuning lagi.png"
-    },
-    {
-        "id": 22,
-        "merek": "Nissan",
-        "tahun_beli": 2016,
-        "tipe": "Pickup",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 49291,
-        "warna": "Hijau",
-        "harga": 234323402,
-        "daerah": "Jakarta",
-        "fitur_tambahan": [
-            "Sensor Parkir",
-            "Kamera Belakang",
-            "AC",
-            "ABS",
-            "Bluetooth"
-        ],
-        "gambar": "https://example.com/images/car_22.jpg"
-    },
-    {
-        "id": 23,
-        "merek": "Nissan",
-        "tahun_beli": 2017,
-        "tipe": "Sedan",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 73581,
-        "warna": "Kuning",
-        "harga": 304425346,
-        "daerah": "Jakarta",
-        "fitur_tambahan": [
-            "Kamera Belakang",
-            "ABS",
-            "AC"
-        ],
-        "gambar": "https://example.com/images/car_23.jpg"
-    },
-    {
-        "id": 24,
-        "merek": "Honda",
-        "tahun_beli": 2011,
-        "tipe": "Sedan",
-        "transmisi": "Manual",
-        "jarak_tempuh": 140502,
-        "warna": "Abu-abu",
-        "harga": 95416137,
-        "daerah": "Yogyakarta",
-        "fitur_tambahan": [
-            "Airbag",
-            "Sunroof"
-        ],
-        "gambar": "https://example.com/images/car_24.jpg"
-    },
-    {
-        "id": 25,
-        "merek": "Wuling",
-        "tahun_beli": 2021,
-        "tipe": "Sedan",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 110078,
-        "warna": "Hitam",
-        "harga": 242593254,
-        "daerah": "Denpasar",
-        "fitur_tambahan": [
-            "Sunroof",
-            "Bluetooth",
-            "Airbag",
-            "ABS"
-        ],
-        "gambar": "https://example.com/images/car_25.jpg"
-    },
-    {
-        "id": 26,
-        "merek": "Honda",
-        "tahun_beli": 2013,
-        "tipe": "Pickup",
-        "transmisi": "Manual",
-        "jarak_tempuh": 42036,
-        "warna": "Abu-abu",
-        "harga": 355866323,
-        "daerah": "Bandung",
-        "fitur_tambahan": [
-            "AC",
-            "Sunroof",
-            "Bluetooth",
-            "Airbag"
-        ],
-        "gambar": "https://example.com/images/car_26.jpg"
-    },
-    {
-        "id": 27,
-        "merek": "Mazda",
-        "tahun_beli": 2010,
-        "tipe": "Sedan",
-        "transmisi": "Manual",
-        "jarak_tempuh": 142650,
-        "warna": "Kuning",
-        "harga": 200930746,
-        "daerah": "Denpasar",
-        "fitur_tambahan": [
-            "Power Steering",
-            "ABS"
-        ],
-        "gambar": "https://example.com/images/car_27.jpg"
-    },
-    {
-        "id": 28,
-        "merek": "Mazda",
-        "tahun_beli": 2012,
-        "tipe": "SUV",
-        "transmisi": "Manual",
-        "jarak_tempuh": 24994,
-        "warna": "Kuning",
-        "harga": 354011857,
-        "daerah": "Medan",
-        "fitur_tambahan": [
-            "ABS",
-            "Sensor Parkir",
-            "Airbag",
-            "Sunroof",
-            "AC"
-        ],
-        "gambar": "https://example.com/images/car_28.jpg"
-    },
-    {
-        "id": 29,
-        "merek": "Toyota",
-        "tahun_beli": 2019,
-        "tipe": "Convertible",
-        "transmisi": "Otomatis",
-        "jarak_tempuh": 64810,
-        "warna": "Kuning",
-        "harga": 349422233,
-        "daerah": "Surabaya",
-        "fitur_tambahan": [
-            "ABS",
-            "Power Steering",
-            "Sensor Parkir"
-        ],
-        "gambar": "https://example.com/images/car_29.jpg"
-    },
-    {
-        "id": 30,
-        "merek": "Honda",
-        "tahun_beli": 2020,
-        "tipe": "Crossover",
-        "transmisi": "Manual",
-        "jarak_tempuh": 63471,
-        "warna": "Abu-abu",
-        "harga": 105757259,
-        "daerah": "Makassar",
-        "fitur_tambahan": [
-            "Power Steering",
-            "Kamera Belakang",
-            "Sunroof",
-            "Sensor Parkir"
-        ],
-        "gambar": "https://example.com/images/car_30.jpg"
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2023-11-15"
     }
+  },
+  {
+    "id": 2,
+    "merek": "Toyota",
+    "nama": "Toyota Fortuner VRZ 2.4 AT",
+    "tahun_beli": 2019,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 45000,
+    "warna": "Hitam",
+    "harga": 495000000,
+    "daerah": "Jakarta Utara",
+    "fitur_tambahan": [
+      "Airbag",
+      "AC",
+      "Power Steering",
+      "Sensor Parkir",
+      "Kamera Belakang"
+    ],
+    "gambar": "/image/car/black-toyota-fortuner.png",
+    "penjual": {
+      "nama": "Auto Jaya",
+      "kontak": "083456789012",
+      "rating": 4.9
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-06-15",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-03-22"
+    }
+  },
+  {
+    "id": 3,
+    "merek": "Suzuki",
+    "nama": "Suzuki ERTIGA GL 1.5",
+    "tahun_beli": 2017,
+    "tipe": "MPV",
+    "transmisi": "Manual",
+    "jarak_tempuh": 60000,
+    "warna": "Abu-abu",
+    "harga": 185000000,
+    "daerah": "Medan",
+    "fitur_tambahan": ["AC", "Power Steering"],
+    "gambar": "/image/car/gray-suzuki-ertiga.png",
+    "penjual": {
+      "nama": "Sentosa Mobil",
+      "kontak": "084567890123",
+      "rating": 4.6
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-04-20",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": true,
+      "servis_terakhir": "2023-12-01"
+    }
+  },
+
+ {
+    "id": 4,
+    "merek": "Suzuki",
+    "nama": "Suzuki ERTIGA GL 1.5",
+    "tahun_beli": 2019,
+    "tipe": "MPV",
+    "transmisi": "Manual",
+    "jarak_tempuh": 30000,
+    "warna": "Abu-abu",
+    "harga": 185000000,
+    "daerah": "Yogyakarta",
+    "fitur_tambahan": ["AC", "Power Steering"],
+    "gambar": "/image/car/gray-suzuki-ertiga.png",
+    "penjual": {
+      "nama": "Mobilindo",
+      "kontak": "085678901234",
+      "rating": 4.3
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-08-10",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-03-30"
+    }
+  },
+  {
+    "id": 5,
+    "merek": "Toyota",
+    "nama": "Toyota RUSH TRD Sportivo",
+    "tahun_beli": 2021,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 18000,
+    "warna": "Hitam",
+    "harga": 270000000,
+    "daerah": "Jakarta Selatan",
+    "fitur_tambahan": ["Airbag", "AC", "Power Steering", "Kamera Belakang"],
+    "gambar": "/image/car/black-toyota-rush.png",
+    "penjual": {
+      "nama": "Tunas Toyota",
+      "kontak": "081298765432",
+      "rating": 4.7
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-08-31",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-04-15"
+    }
+  },
+  {
+    "id": 6,
+    "merek": "Toyota",
+    "nama": "Toyota RUSH G 1.5",
+    "tahun_beli": 2020,
+    "tipe": "SUV",
+    "transmisi": "Manual",
+    "jarak_tempuh": 25000,
+    "warna": "Abu-abu",
+    "harga": 255000000,
+    "daerah": "Bandung",
+    "fitur_tambahan": ["AC", "Power Steering", "Sensor Parkir"],
+    "gambar": "/image/car/gray-toyota-rush.png",
+    "penjual": {
+      "nama": "Auto Prima",
+      "kontak": "081223344556",
+      "rating": 4.4
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-07-15",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-04-01"
+    }
+  },
+  {
+    "id": 7,
+    "merek": "Toyota",
+    "nama": "Toyota RUSH S 1.5",
+    "tahun_beli": 2021,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 22000,
+    "warna": "Merah",
+    "harga": 275000000,
+    "daerah": "Semarang",
+    "fitur_tambahan": ["Airbag", "AC", "Kamera Belakang"],
+    "gambar": "/image/car/red-toyota-rush.png",
+    "penjual": {
+      "nama": "Raya Motor",
+      "kontak": "082112233445",
+      "rating": 4.5
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-08-01",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-10"
+    }
+  },
+  {
+    "id": 8,
+    "merek": "Toyota",
+    "nama": "Toyota Calya G 1.2",
+    "tahun_beli": 2020,
+    "tipe": "MPV",
+    "transmisi": "Manual",
+    "jarak_tempuh": 30000,
+    "warna": "Hitam",
+    "harga": 165000000,
+    "daerah": "Depok",
+    "fitur_tambahan": ["AC", "Power Steering"],
+    "gambar": "/image/car/black-toyota-cayla.png",
+    "penjual": {
+      "nama": "Citra Mobil",
+      "kontak": "082345678901",
+      "rating": 4.2
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-09-30",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-01"
+    }
+  },
+  {
+    "id": 9,
+    "merek": "Hyundai",
+    "nama": "Hyundai Creta Prime IVT",
+    "tahun_beli": 2022,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 12000,
+    "warna": "Putih",
+    "harga": 395000000,
+    "daerah": "Jakarta Pusat",
+    "fitur_tambahan": ["Sunroof", "Airbag", "AC", "Kamera 360"],
+    "gambar": "/image/car/white-hyundai-creta.png",
+    "penjual": {
+      "nama": "Hyundai Senayan",
+      "kontak": "085600123456",
+      "rating": 4.9
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-07-30",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-06-01"
+    }
+  },
+  {
+    "id": 10,
+    "merek": "Nissan",
+    "nama": "Nissan GTR R34",
+    "tahun_beli": 2002,
+    "tipe": "Coupe",
+    "transmisi": "Manual",
+    "jarak_tempuh": 80000,
+    "warna": "Biru",
+    "harga": 1500000000,
+    "daerah": "Bali",
+    "fitur_tambahan": ["Turbo", "Bucket Seat", "AC"],
+    "gambar": "/image/car/blue-nissan-gtr-r34.png",
+    "penjual": {
+      "nama": "JDM Garage",
+      "kontak": "087712345678",
+      "rating": 5.0
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-12-31",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": true,
+      "servis_terakhir": "2024-03-10"
+    }
+  },
+  {
+    "id": 11,
+    "merek": "Nissan",
+    "nama": "Nissan GTR R35",
+    "tahun_beli": 2015,
+    "tipe": "Coupe",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 45000,
+    "warna": "Hitam",
+    "harga": 1850000000,
+    "daerah": "Surabaya",
+    "fitur_tambahan": ["Turbo", "AC", "Kamera Belakang"],
+    "gambar": "/image/car/black-nissan-gtr-r35.png",
+    "penjual": {
+      "nama": "Supercar ID",
+      "kontak": "087898765432",
+      "rating": 4.8
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-11-30",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-02-18"
+    }
+  },
+  {
+    "id": 12,
+    "merek": "Nissan",
+    "nama": "Nissan Grand Livina XV",
+    "tahun_beli": 2016,
+    "tipe": "MPV",
+    "transmisi": "Manual",
+    "jarak_tempuh": 75000,
+    "warna": "Abu-abu",
+    "harga": 145000000,
+    "daerah": "Palembang",
+    "fitur_tambahan": ["AC", "Power Steering"],
+    "gambar": "/image/car/gray-nissan-grand-livina.png",
+    "penjual": {
+      "nama": "Livina Auto",
+      "kontak": "082198745610",
+      "rating": 4.4
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-10-01",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-01-05"
+    }
+  },
+  {
+    "id": 13,
+    "merek": "Toyota",
+    "nama": "Toyota Yaris G 1.5",
+    "tahun_beli": 2021,
+    "tipe": "Hatchback",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 21000,
+    "warna": "Hitam",
+    "harga": 275000000,
+    "daerah": "Makassar",
+    "fitur_tambahan": ["AC", "Airbag", "Power Steering", "Kamera Belakang"],
+    "gambar": "/image/car/black-toyota-yaris.png",
+    "penjual": {
+      "nama": "Makassar Auto",
+      "kontak": "085700112233",
+      "rating": 4.6
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-09-01",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-06-01"
+    }
+  },
+  {
+    "id": 14,
+    "merek": "Toyota",
+    "nama": "Toyota Yaris TRD Sportivo",
+    "tahun_beli": 2020,
+    "tipe": "Hatchback",
+    "transmisi": "Manual",
+    "jarak_tempuh": 35000,
+    "warna": "Putih",
+    "harga": 260000000,
+    "daerah": "Bogor",
+    "fitur_tambahan": ["AC", "Power Steering"],
+    "gambar": "/image/car/white-toyota-yaris.png",
+    "penjual": {
+      "nama": "Bogor Mobil",
+      "kontak": "082233445566",
+      "rating": 4.3
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-07-20",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-03-28"
+    }
+  },
+  {
+    "id": 15,
+    "merek": "Toyota",
+    "nama": "Toyota Yaris S CVT",
+    "tahun_beli": 2022,
+    "tipe": "Hatchback",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 11000,
+    "warna": "Merah",
+    "harga": 285000000,
+    "daerah": "Malang",
+    "fitur_tambahan": ["AC", "Kamera Belakang", "Airbag"],
+    "gambar": "/image/car/red-toyota-yaris.png",
+    "penjual": {
+      "nama": "Malang Motor",
+      "kontak": "081234556677",
+      "rating": 4.7
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-10-15",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-15"
+    }
+  },
+  {
+    "id": 16,
+    "merek": "Honda",
+    "nama": "Honda HR-V E CVT",
+    "tahun_beli": 2021,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 28000,
+    "warna": "Merah",
+    "harga": 385000000,
+    "daerah": "Bandar Lampung",
+    "fitur_tambahan": ["Sunroof", "AC", "Airbag"],
+    "gambar": "/image/car/red-honda-hrv.png",
+    "penjual": {
+      "nama": "Honda Lampung",
+      "kontak": "081255599977",
+      "rating": 4.8
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-09-15",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-10"
+    }
+  },
+  {
+    "id": 17,
+    "merek": "Honda",
+    "nama": "Honda HR-V S CVT",
+    "tahun_beli": 2020,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 32000,
+    "warna": "Abu-abu",
+    "harga": 365000000,
+    "daerah": "Padang",
+    "fitur_tambahan": ["AC", "Power Steering", "Sensor Parkir"],
+    "gambar": "/image/car/gray-honda-hrv.png",
+    "penjual": {
+      "nama": "Padang Auto",
+      "kontak": "085744433322",
+      "rating": 4.4
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-08-25",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": true,
+      "servis_terakhir": "2024-04-30"
+    }
+  },
+  {
+    "id": 18,
+    "merek": "Honda",
+    "nama": "Honda HR-V E CVT",
+    "tahun_beli": 2022,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 14000,
+    "warna": "Hitam",
+    "harga": 395000000,
+    "daerah": "Denpasar",
+    "fitur_tambahan": ["AC", "Airbag", "Kamera Belakang"],
+    "gambar": "/image/car/black-honda-hrv.png",
+    "penjual": {
+      "nama": "Honda Dewata",
+      "kontak": "081277788899",
+      "rating": 4.9
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-10-31",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-06-01"
+    }
+  },
+  {
+    "id": 19,
+    "merek": "Toyota",
+    "nama": "Toyota Alphard 2.5 G",
+    "tahun_beli": 2023,
+    "tipe": "MPV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 5000,
+    "warna": "Hitam",
+    "harga": 1290000000,
+    "daerah": "Jakarta Utara",
+    "fitur_tambahan": ["AC", "Power Sliding Door", "Kamera 360", "Airbag"],
+    "gambar": "/image/car/black-toyota-alphard.png",
+    "penjual": {
+      "nama": "Toyota Premium Auto",
+      "kontak": "082112222333",
+      "rating": 5.0
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-11-20",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-20"
+    }
+  },
+  {
+    "id": 20,
+    "merek": "Nissan",
+    "nama": "Nissan Pulsar Hatchback",
+    "tahun_beli": 2018,
+    "tipe": "Hatchback",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 32000,
+    "warna": "Abu-abu",
+    "harga": 235000000,
+    "daerah": "Surabaya",
+    "fitur_tambahan": ["AC", "Power Steering", "Airbag"],
+    "gambar": "/image/car/grey-nissan-pulsar.png",
+    "penjual": {
+      "nama": "Andi Motor",
+      "kontak": "081234567890",
+      "rating": 4.8
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-12-31",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-05-15"
+    }
+  },
+  {
+    "id": 21,
+    "merek": "Toyota",
+    "nama": "Toyota Fortuner VRZ 2.4",
+    "tahun_beli": 2022,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 15000,
+    "warna": "Hitam",
+    "harga": 580000000,
+    "daerah": "Jakarta Timur",
+    "fitur_tambahan": ["Airbag", "Sensor Parkir", "AC", "Kamera Belakang"],
+    "gambar": "/image/car/black-toyota-fortuner.png",
+    "penjual": {
+      "nama": "Auto Jaya",
+      "kontak": "083456789012",
+      "rating": 4.9
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-06-15",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-03-22"
+    }
+  },
+  {
+    "id": 22,
+    "merek": "Mitsubishi",
+    "nama": "Mitsubishi Pajero Sport Dakar",
+    "tahun_beli": 2022,
+    "tipe": "SUV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 17000,
+    "warna": "Putih",
+    "harga": 620000000,
+    "daerah": "Bogor",
+    "fitur_tambahan": ["AC", "Sunroof", "Airbag"],
+    "gambar": "/image/car/white-mitsubishi-pajero-sport-dakar.png",
+    "penjual": {
+      "nama": "Pajero Auto",
+      "kontak": "082344556677",
+      "rating": 4.6
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-10-01",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-04-20"
+    }
+  },
+  {
+    "id": 23,
+    "merek": "Toyota",
+    "nama": "Toyota Innova Reborn V",
+    "tahun_beli": 2021,
+    "tipe": "MPV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 28000,
+    "warna": "Hitam",
+    "harga": 450000000,
+    "daerah": "Bekasi",
+    "fitur_tambahan": ["AC", "Airbag", "Sensor Parkir"],
+    "gambar": "/image/car/black-toyota-innova-reborn.png",
+    "penjual": {
+      "nama": "Reborn Mobilindo",
+      "kontak": "085622334455",
+      "rating": 4.7
+    },
+    "promosi": {
+      "diskon": false,
+      "masa_berlaku": "2024-09-10",
+      "gratis_ongkir": true
+    },
+    "kondisi": {
+      "mobil_bekas": true,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-04-05"
+    }
+  },
+  {
+    "id": 24,
+    "merek": "Toyota",
+    "nama": "Toyota Innova Reborn V",
+    "tahun_beli": 2021,
+    "tipe": "MPV",
+    "transmisi": "Otomatis",
+    "jarak_tempuh": 25000,
+    "warna": "Putih",
+    "harga": 460000000,
+    "daerah": "Surakarta",
+    "fitur_tambahan": ["AC", "Airbag", "Power Steering"],
+    "gambar": "/image/car/white-toyota-innova-reborn.png",
+    "penjual": {
+      "nama": "Solo Auto",
+      "kontak": "081299988877",
+      "rating": 4.5
+    },
+    "promosi": {
+      "diskon": true,
+      "masa_berlaku": "2024-08-31",
+      "gratis_ongkir": false
+    },
+    "kondisi": {
+      "mobil_bekas": false,
+      "cat_ulang": false,
+      "servis_terakhir": "2024-04-15"
+    }
+  }
 ]

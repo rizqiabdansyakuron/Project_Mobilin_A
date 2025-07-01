@@ -23,7 +23,7 @@ const TeamManager = lazy(() => import("./components/Admin/TeamManager"));
 const JobManager = lazy(() => import("./components/Admin/JobManager"));
 const PesanSaranManager = lazy(() => import("./pages/Pesansaranmanager"));
 const Bantuan = lazy(() => import("./pages/Bantuan"));
-const Footer = lazy(() => import("./components/Footer")); // ✅ Tambahkan Footer
+const Pengaturan = lazy(() => import("./components/Pengaturan")); // ✅ Tambahkan Pengaturan
 
 // Login & Guest
 const SignupPage = lazy(() => import("./pages/SignupPage"));
@@ -74,6 +74,7 @@ function AppContent() {
                 <Route path="/lokasi" element={<ManajemenLokasi />} />
                 <Route path="/admin/kontak" element={<KelolaKontak />} />
                 <Route path="/bantuan" element={<Bantuan />} />
+                <Route path="/pengaturan" element={<Pengaturan />} /> {/* ✅ Tambahkan route Pengaturan */}
 
                 {/* Error Fallback */}
                 <Route path="*" element={<Errormobilin />} />
@@ -82,12 +83,6 @@ function AppContent() {
           </div>
         </div>
       </div>
-      {/* Tambahkan Footer di sini */}
-      {!isPlain && (
-        <Suspense fallback={null}>
-          <Footer />
-        </Suspense>
-      )}
     </div>
   );
 }
